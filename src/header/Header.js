@@ -8,7 +8,7 @@ import {
     Tabs,
     Tab,
   } from "@mui/material";
-import logo from 'D:/Travel/travel/src/images/travel.png';
+import logo from 'src/images/travel.png';
 import  {Link,useNavigate}  from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const linksArr = ["login", "register"]; 
