@@ -1,5 +1,5 @@
-import logo from 'D:/Travel/travel/src/images/edited.png';
-import car from 'D:/Travel/travel/src/images/car.png';
+import logo from '../../images/edited.png';
+import car from '../../images/car.png';
 import './register.css';
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';

@@ -9,14 +9,14 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation, Scrollbar} from 'swiper';
 
-import slide_image_1 from 'D:/Travel/travel/src/images/assets/images/imagesMain.png';
-import slide_image_2 from 'D:/Travel/travel/src/images/assets/images/mustVisit.png';
-import slide_image_3 from 'D:/Travel/travel/src/images/assets/images/avoid.png';
-import slide_image_4 from 'D:/Travel/travel/src/images/assets/images/hotels.png';
-import slide_image_5 from 'D:/Travel/travel/src/images/assets/images/markets.png';
-import slide_image_6 from 'D:/Travel/travel/src/images/assets/images/food.png';
-import slide_image_7 from 'D:/Travel/travel/src/images/assets/images/things.png';
-import slide_image_8 from 'D:/Travel/travel/src/images/assets/images/points.png';
+import slide_image_1 from '../../images/assets/images/imagesMain.png';
+import slide_image_2 from '../../images/assets/images/mustVisit.png';
+import slide_image_3 from '../../images/assets/images/avoid.png';
+import slide_image_4 from '../../images/assets/images/hotels.png';
+import slide_image_5 from '../../images/assets/images/markets.png';
+import slide_image_6 from '../../images/assets/images/food.png';
+import slide_image_7 from '../../images/assets/images/things.png';
+import slide_image_8 from '../../images/assets/images/points.png';
 import { useNavigate } from 'react-router';
 
 function MyCard(prop) {

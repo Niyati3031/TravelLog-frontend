@@ -1,7 +1,7 @@
 import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 import AboutMe from '../about/aboutme.js';
 import './homepage.css';
-import logo from 'D:/Travel/travel/src/images/monuments_home.jpg';
+import logo from '../../images/monuments_home.jpg';
 
 function HomePage(){
     return(

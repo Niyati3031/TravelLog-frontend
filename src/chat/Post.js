@@ -11,16 +11,16 @@ import ReactTimeAgo from 'react-time-ago';
 import axios from 'axios';
 import ReactHtmlParser from 'html-react-parser';
 import {getUserDetails } from '../apihelpers/helpers';
-import logo1 from 'D:/Travel/travel/src/images/logos/chatProfile.jpg';
-import logo2 from 'D:/Travel/travel/src/images/logos/logo2.jpg';
-import logo3 from 'D:/Travel/travel/src/images/logos/logo3.jpg';
-import logo4 from 'D:/Travel/travel/src/images/logos/logo4.jpg';
-import logo5 from 'D:/Travel/travel/src/images/logos/logo5.jpg';
-import logo6 from 'D:/Travel/travel/src/images/logos/logo6.jpg';
-import logo7 from 'D:/Travel/travel/src/images/logos/logo7.jpg';
-import logo8 from 'D:/Travel/travel/src/images/logos/logo8.jpg';
-import logo9 from 'D:/Travel/travel/src/images/logos/logo9.jpg';
-import logo10 from 'D:/Travel/travel/src/images/logos/logo10.jpg';
+import logo1 from '../images/logos/chatProfile.jpg';
+import logo2 from '../images/logos/logo2.jpg';
+import logo3 from '../images/logos/logo3.jpg';
+import logo4 from '../images/logos/logo4.jpg';
+import logo5 from '../images/logos/logo5.jpg';
+import logo6 from '../images/logos/logo6.jpg';
+import logo7 from '../images/logos/logo7.jpg';
+import logo8 from '../images/logos/logo8.jpg';
+import logo9 from '../images/logos/logo9.jpg';
+import logo10 from '../images/logos/logo10.jpg';
 
 
 let images = [logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10];

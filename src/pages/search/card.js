@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from 'D:/Travel/travel/src/images/travel.png';
+import profile from '../../images/travel.png';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 import { useNavigate } from "react-router-dom";

@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 // import background from './images/background2.jpg';
-import logo_add from 'D:/Travel/travel/src/images/background_add.png'
+import logo_add from '../../images/background_add.png'
 import GlassCard from './glasscard';
 import './card.css';
 

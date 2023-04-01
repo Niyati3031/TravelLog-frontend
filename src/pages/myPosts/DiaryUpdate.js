@@ -3,7 +3,7 @@ import { Button, FormLabel, TextField, Typography, Box } from "@mui/material";
 import { useNavigate, useParams } from "react-router";
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { getPostDetails, postUpdate } from "../../apihelpers/helpers";
-import avatar from "D:/Travel/travel/src/images/travel.png"
+import avatar from "../../images/travel.png"
 
 const DiaryUpdate = () => {
     const navigate = useNavigate();

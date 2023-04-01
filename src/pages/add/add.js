@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import './add.css';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 import { addPost } from "../../apihelpers/helpers";
-import avatar from "D:/Travel/travel/src/images/travel.png"
+import avatar from "../../images/travel.png"
 import { useNavigate } from "react-router";
 import { cities } from "../cities";
 

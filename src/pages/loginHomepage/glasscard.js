@@ -1,6 +1,6 @@
 import React from 'react';
-import profile from 'D:/Travel/travel/src/images/searchPage.png';
-import add from 'D:/Travel/travel/src/images/add.png';
+import profile from '../../images/searchPage.png';
+import add from '../../images/add.png';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
 import { useNavigate } from "react-router-dom";

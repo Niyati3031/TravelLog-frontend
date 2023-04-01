@@ -67,23 +67,23 @@
   }
   
   #monuments {
-    background-image: url(D:\Travel\travel\src\images\monuments2.png);
+    background-image: url(../../images/monuments2.png);
     width: 100%;
     z-index: -3;
   }
   
   #light {
-    background-image: url(D:\Travel\travel\src\images\light.png);
+    background-image: url(../../images/light.png);
     z-index: -3;
   }
   
   #dark {
-    background-image: url(D:\Travel\travel\src\images\dark.png);
+    background-image: url(../../images/dark.png);
     z-index: -3;
   }
   
   #sky {
-    background-image: url(D:\Travel\travel\src\images\sky.jpg);
+    background-image: url(../../images/sky.jpg);
     z-index: -3;
   }
   /* #clouds {
