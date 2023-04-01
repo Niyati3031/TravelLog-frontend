@@ -6,7 +6,7 @@ import "react-responsive-modal/styles.css";
 import axios from "axios";
 import { useNavigate } from 'react-router';
 import { Modal } from "react-responsive-modal";
-import logo from 'D:/Travel/travel/src/images/logos/chatProfile.jpg';
+import logo from 'src\images\logos\chatProfile.jpg';
 import {
   AssignmentTurnedInOutlined,
   NotificationsOutlined,
