@@ -1,7 +1,7 @@
 .quora {
     width: "100%";
     min-width: fit-content;
-    background-image: url('src\images\chat_back.jpg');
+    background-image: url('src/images/chat_back.jpg');
     background-size: 500px; 
   }
   
