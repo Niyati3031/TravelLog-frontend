@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en.json";
-axios.defaults.baseURL = "http://localhost:5050"//"https://travel-mania-api.onrender.com";
+axios.defaults.baseURL = "https://travel-mania-api.onrender.com";//"http://localhost:5050"
 
 TimeAgo.addDefaultLocale(en);
 // TimeAgo.addLocale(en);
