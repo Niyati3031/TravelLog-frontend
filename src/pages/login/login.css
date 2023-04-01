@@ -1,0 +1,141 @@
+.App {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .textfield_label {
+    color: aliceblue !important;
+  }
+  .left{
+    background: #7DB9B6;
+    height:100%;
+    width:30%;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+  }
+
+  .center{
+    background: #0E8388;
+    height: 70%;
+    width: 50%;
+    left:10%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0E8388;
+    position: absolute;
+  }
+
+  .center-left{
+    /* background: #F6E1C3; */
+    background-image: url('D:\Travel\travel\src\images\girl.png');
+    background-size:300px 500px;
+    height: 100%;
+    width: 39.5%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .card{
+    height: 340px;
+    width: 250px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+  }
+  
+  .front{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  .front{
+    /* background: linear-gradient(#08aeea, #2af598); */
+    /* background-image: url('D:\Travel\travel\src\images\background.png');
+    background-size: 1500px 1000px; */
+    background: #EDF1D6;
+    z-index: 2;
+  }
+  
+  .btnFront{
+    z-index: 5;
+    position: absolute;
+    margin-top:-100px;
+    margin-left: 90px;
+    background-color: rgb(255, 119, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .register{
+    z-index: 5;
+    position: absolute;
+    margin-top:-50px;
+    margin-left: 55px;
+    color: rgb(255, 119, 0);
+    background-color: transparent;
+    border-color: transparent;
+    font-weight:bold;
+  }
+
+  .App-logo {
+    margin-right:-100px;
+    margin-bottom: -100px;
+    top:0;
+    height: 150vmin;
+    position: absolute;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo{
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  .carFront{
+    height: 170px;
+    margin-top: -200px;
+    margin-left: 500px;
+    position: absolute;
+    z-index: 4;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  

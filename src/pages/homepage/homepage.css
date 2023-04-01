@@ -1,0 +1,102 @@
+
+#about {
+    /* background-color: #FAEDCD; */
+    height: 200px;
+  }
+  #about-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  
+  #about-title {
+    color: #9E4784;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #about-content {
+    color: #9E4784;
+    font-size: 20px;
+  }
+  
+  #about-footer {
+    color: #9E4784;
+    font-size: 15px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 20px;
+  
+  }
+  
+  #about-devsense {
+    text-decoration: none;
+    color: #9E4784;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .animation, .animation_layer {
+      height: 0px;
+      top:0;
+
+  }
+
+  .animation {
+      display: block;
+      position: relative;
+      z-index: 10;
+  }
+  
+  .animation_layer {
+      background-position: bottom center;
+      background-size: auto 1038px;
+      background-repeat: repeat-x;
+      width: 100%;
+      position: absolute;
+
+  }
+  .animation_layer.parallax {
+      position: static;
+  }
+  
+  #monuments {
+    background-image: url(D:\Travel\travel\src\images\monuments2.png);
+    width: 100%;
+    z-index: -3;
+  }
+  
+  #light {
+    background-image: url(D:\Travel\travel\src\images\light.png);
+    z-index: -3;
+  }
+  
+  #dark {
+    background-image: url(D:\Travel\travel\src\images\dark.png);
+    z-index: -3;
+  }
+  
+  #sky {
+    background-image: url(D:\Travel\travel\src\images\sky.jpg);
+    z-index: -3;
+  }
+  /* #clouds {
+    background-image: url(D:\Travel\travel\src\images\clouds.png);
+    width: 100%;
+  } */
+  
+
+.body {
+  margin: -5px;
+  background: #ffaf00;
+}
+
+
+
+

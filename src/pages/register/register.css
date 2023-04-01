@@ -1,0 +1,136 @@
+.App {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .right{
+    background: #7DB9B6;
+    height:100%;
+    width:30%;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    position: absolute;
+  }
+  
+  .centerR{
+    background: #0E8388;
+    height: 70%;
+    width: 50%;
+    right:10%;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0E8388;
+    position: absolute;
+  }
+  .center-right{
+    /* background: #F6E1C3; */
+    background-image: url('D:\Travel\travel\src\images\girl.png');
+    background-size:300px 500px;
+    height: 100%;
+    width: 39.5%;
+    right:0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+  }
+  .card{
+    height: 340px;
+    width: 250px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  
+  .back{
+    background: #EDF1D6;
+    z-index: 2;
+  }
+  
+  .btnBack{
+    z-index: 4;
+    position: absolute;
+  }
+  
+  .container:hover .card{
+    transform: rotateY(180deg);
+  }
+  
+  .container{
+    perspective: 1000px;
+  }
+  .container:hover .card{
+    transform: rotate(180deg);
+  }
+
+  .App-logoBack {
+    margin-left:-1200px;
+    margin-bottom: -400px;
+    height: 150vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo, .App-logoBack {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  .carBack{
+    height: 170px;
+    margin-left:-1250px;
+    margin-bottom: 220px;
+    position: absolute;
+    z-index: 3;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes App-logoBack-spin{
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  

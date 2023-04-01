@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  .form_back{
+    /* background: url('D:/Travel/travel/src/images/scenery.jpg'); */
+    background: linear-gradient(#CFFF8D, #A8E890, #749F82, #425F57);
+  }
+  .Add {
+    width: 150vh;
+    margin: 2rem auto;
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    justify-content: space-between;
+  }
+  
+  .form-field {
+    flex: 2;
+  }
+  .output {
+    margin-left: 3rem;
+    flex: 1;
+  }
+  .form-field label,
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(84, 84, 84);
+  }
+  
+  input {
+    height: 35px;
+    width: 100%;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  input:focus {
+    border: 1px solid rgb(0, 208, 255);
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first-division {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0.5rem 0;
+    width: 100%;
+  }
+  button {
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
+  .first-division button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: #7A3E65;
+    background: #CFFF8D;
+    border: 1px solid #7A3E65;
+    border-radius: 25px;
+  }
+  
+  .second-division button {
+    display: flex;
+    color: #7A3E65;
+    background: #A8E890;
+    border: 1px solid #7A3E65;
+    border-radius: 25px;
+  }
