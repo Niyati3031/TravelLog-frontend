@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from 'src\images\travel.png';
+import logo from 'src/images/travel.png';
 import HomeIcon from '@mui/icons-material/Home';
 import FeaturedPlayListOutlinedIcon from "@mui/icons-material/FeaturedPlayListOutlined";
 import {
