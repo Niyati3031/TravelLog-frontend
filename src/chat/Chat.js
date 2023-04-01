@@ -3,7 +3,7 @@ import { ChatHeader } from './ChatHeader'
 import { Feed } from './Feed'
 import './css/Chat.css';
 import { Route, Router, Routes } from 'react-router';
-import logo from 'D:/Travel/travel/src/images/chat_back.jpg';
+import logo from 'src\images\chat_back.jpg';
 
 export const Chat = () => {
   return (
