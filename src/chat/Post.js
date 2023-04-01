@@ -85,6 +85,7 @@ const Username = (id) => {
 }
 
 useEffect(() => {
+  if(post?.user){
   axios.get(`/users/${post?.user}`)
     .then((res) => {
       console.log(res.data.user.name);
@@ -93,6 +94,7 @@ useEffect(() => {
     .catch((e) => {
       console.log(e);
     });
+  }
 }, []);
 
 const max =images.length -1;

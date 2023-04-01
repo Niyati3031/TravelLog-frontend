@@ -64,7 +64,7 @@ function App() {
             <Route path='/myPosts' element={<MyPosts/>}></Route>
             <Route path='/profile' element={<Profile/>}></Route>
             <Route path='/posts/useId/:id' element={<DiaryUpdate/>}></Route> 
-            {/* <Route path='/chat' element={<Chat/>}></Route> */}
+            <Route path='/chat' element={<Chat/>}></Route>
             </>}
           </Routes>
       </section>
