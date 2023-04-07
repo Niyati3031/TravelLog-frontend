@@ -31,7 +31,7 @@ const Profile = () => {
             <center>
             <Typography textAlign={'center'} variant="h5" padding={2}>User Profile</Typography>
                 <Card sx={{display: 'block',
-    width: '12vw',
+    width: '50%',
     transitionDuration: '0.3s',
     height: 'auto', maxWidth: 345, marginLeft: "5%"}}>
       <CardActionArea>

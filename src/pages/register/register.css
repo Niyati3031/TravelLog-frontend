@@ -7,7 +7,7 @@
   .right{
     background: #7DB9B6;
     height:100%;
-    width:30%;
+    width:43.4%;
     right:0;
     display: flex;
     justify-content: center;
@@ -18,27 +18,12 @@
   }
   
   .centerR{
-    background: #0E8388;
-    height: 70%;
+    height: 80%;
     width: 50%;
     right:10%;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #0E8388;
     position: absolute;
   }
-  .center-right{
-    /* background: #F6E1C3; */
-    background-image: url('../../images/girl.png');
-    background-size:300px 500px;
-    height: 100%;
-    width: 39.5%;
-    right:0;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    position: absolute;
-  }
+
   .card{
     height: 340px;
     width: 250px;
@@ -134,3 +119,17 @@
     }
   }
   
+  @media only screen and (max-width: 1026px) {
+    .carBack {
+        display: none;
+    }
+    .App-logoBack {
+      display: none;
+    }
+    .centerR {
+      width: 80%;
+    }
+    .right{
+      width: 63.4%;
+    }
+}

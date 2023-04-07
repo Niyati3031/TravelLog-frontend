@@ -112,11 +112,11 @@ const DiaryItem = ({image, location, id, budget, mustVisit, user,name, point}) =
         {name.charAt(0)}
       </Avatar>
     }
-    action={
-      <IconButton aria-label="settings">
-        <Icon path={mdiDotsVertical} size={1.3} color="#222" />
-      </IconButton>
-    }
+    // action={
+      // <IconButton aria-label="settings">
+      //   <Icon path={mdiDotsVertical} size={1.3} color="#222" />
+      // </IconButton>
+    // }
     title={
       <Typography variant="h6" sx={{ fontWeight: "bold" }}>
         {location}
@@ -197,7 +197,7 @@ const DiaryItem = ({image, location, id, budget, mustVisit, user,name, point}) =
   <Box
     sx={{
       bgcolor: "grey",
-      p: 3,
+      p: 1,
       display: "flex",
       justifyContent: "space-between"
     }}

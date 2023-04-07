@@ -2,13 +2,22 @@ import logo from '../../images/edited.png';
 import car from '../../images/car.png';
 import './register.css';
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { sentRegisterRequest } from '../../apihelpers/helpers';
 import { useDispatch } from 'react-redux';
 import { authActions } from '../../store';
+import axios from "axios";
+import styles from "./styles.module.css";
+import girl from '../../images/girl.png';
 
 function Register() {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const onResReceived = (data) => {
     localStorage.setItem("userId",data.id);
@@ -22,27 +31,31 @@ function Register() {
     navigate('/login');
   }
 
-const [inputs, setInputs] = useState({
-  name: "",
-  email: "",
-  password: "",
-});
-const handleChange = (e) => {
-  setInputs((prevState) => ({
-    ...prevState,
-    [e.target.name]: e.target.value,
-  }));
-};
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+  const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
 
-  console.log(inputs);
+  const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "http://localhost:5050/users/signup";
+			const { data: res } = await axios.post(url, data);
+      localStorage.setItem("userId",res.id);
+      console.log(res.message);
+     dispatch(authActions.login());
+      navigate("/home");
 
-  sentRegisterRequest(inputs)
-  .then(onResReceived)
-  .catch((err) => console.log(err));
-};
+		} catch (error) {
+			if (
+				error.response &&
+				error.response.status >= 400 &&
+				error.response.status <= 500
+			) {
+				setError(error.response.data.message);
+			}
+		}
+	};
   return (
     <div className="App">
       <header className="App-header">
@@ -51,78 +64,55 @@ const handleSubmit = (e) => {
           <img src={logo} className="App-logoBack" alt="logo" />
           <div className='right'></div>
             <div className='centerR'>
-              <div className='center-right'></div>
-              <div>
-                <form onSubmit={handleSubmit}>
-                  <Box
-                    maxWidth={350}
-                    display="flex"
-                    flexDirection={"column"}
-                    alignItems="center"
-                    justifyContent={"center"}
-                    // boxShadow="10px 10px 20px #ccc"
-                    padding={3}
-                    margin="auto"
-                    marginTop={-3}
-                    marginRight={42}
-                    borderRadius={5}
-                  >
-                  <Typography variant="h2" padding={3} textAlign="center" sx={{color: "white"}}>
-                    Register
-                  </Typography>
-                    <TextField
-                      name="name"
-                      sx={{border:"solid white 2px", "& .MuiInputBase-root": {
-                        color: 'white'
-                    }}}
-                      onChange={handleChange}
-                      value={inputs.name}
-                      placeholder="Name"
-                      margin="normal"
-                    />
-                    <TextField
-                      name="email"
-                      sx={{border:"solid white 2px", "& .MuiInputBase-root": {
-                        color: 'white'
-                    }}}
-                      onChange={handleChange}
-                      value={inputs.email}
-                      type={"email"}
-                      placeholder="Email"
-                      margin="normal"
-                      variant='outlined'
-                    />
-                    <TextField
-                      name="password"
-                      sx={{border:"solid white 2px", "& .MuiInputBase-root": {
-                        color: 'white'
-                    }}}
-                      onChange={handleChange}
-                      value={inputs.password}
-                      type={"password"}
-                      placeholder="Password"
-                      margin="normal"
-                      variant='outlined'
-                    />
-                    <Button
-                      type="submit"
-                      variant="contained"
-                      sx={{ borderRadius: 3, marginTop: 3 }}
-                      color="warning"
-                    >
-                      Submit
-                    </Button>
-                    <Button
-                      // onClick={() => setIsSignup(!isSignup)}
-                      onClick={navigateToLogin}
-                      sx={{ borderRadius: 3, marginTop: 1, color: "#FFA500"}}
-                    >
-                      Already have an account? Login
-                      {/* Change To {isSignup ? "Login" : "Signup"} */}
-                    </Button>
-                    </Box>
-                </form>
-              </div>
+              <div className={styles.signup_container}>
+			<div className={styles.signup_form_container}>
+				<div className={styles.left}>
+        <img src={girl}></img>
+				</div>
+				<div className={styles.right}>
+					<form className={styles.form_container} onSubmit={handleSubmit}>
+						<h1>Create Account</h1>
+						<input
+							type="text"
+							placeholder="Name"
+							name="name"
+							onChange={handleChange}
+							value={data.name}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="email"
+							placeholder="Email"
+							name="email"
+							onChange={handleChange}
+							value={data.email}
+							required
+							className={styles.input}
+						/>
+						<input
+							type="password"
+							placeholder="Password"
+							name="password"
+							onChange={handleChange}
+							value={data.password}
+							required
+							className={styles.input}
+						/>
+						{error && <div className={styles.error_msg}>{error}</div>}
+						<button type="submit" className={styles.green_btn}>
+							Sign Up
+						</button>
+            <h1 style={{fontSize:'medium'}}>Already have an account ?</h1>
+					<Link to="/login" style={{marginTop:-50}}>
+						<button type="button" className={styles.white_btn}>
+							Sign In
+						</button>
+					</Link>
+					</form>
+				</div>
+			</div>
+		</div>
             </div>
           
         </div>

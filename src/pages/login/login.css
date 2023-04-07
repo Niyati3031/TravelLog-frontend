@@ -9,7 +9,7 @@
   .left{
     background: #7DB9B6;
     height:100%;
-    width:30%;
+    width:40.8%;
     left:0;
     display: flex;
     justify-content: center;
@@ -20,19 +20,13 @@
   }
 
   .center{
-    background: #0E8388;
-    height: 70%;
+    height: 100%;
     width: 50%;
     left:10%;
-    border-radius: 25px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #0E8388;
     position: absolute;
   }
 
   .center-left{
-    /* background: #F6E1C3; */
     background-image: url('../../images/girl.png');
     background-size:300px 500px;
     height: 100%;
@@ -62,9 +56,6 @@
   }
   
   .front{
-    /* background: linear-gradient(#08aeea, #2af598); */
-    /* background-image: url('D:\Travel\travel\src\images\background.png');
-    background-size: 1500px 1000px; */
     background: #EDF1D6;
     z-index: 2;
   }
@@ -74,7 +65,7 @@
     position: absolute;
     margin-top:-100px;
     margin-left: 90px;
-    background-color: rgb(255, 119, 0); /* Green */
+    background-color: rgb(255, 119, 0); 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -139,3 +130,17 @@
     }
   }
   
+  @media only screen and (max-width: 1026px) {
+    .carFront {
+        display: none;
+    }
+    .App-logo {
+      display: none;
+    }
+    .center{
+      width: 80%;
+    }
+    .left {
+      width: 59.5%;
+    }
+  }
