@@ -39,7 +39,7 @@ function Register() {
   const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:5050/users/signup";
+			const url = "https://travel-mania-api.onrender.com/users/signup";
 			const { data: res } = await axios.post(url, data);
       localStorage.setItem("userId",res.id);
       console.log(res.message);

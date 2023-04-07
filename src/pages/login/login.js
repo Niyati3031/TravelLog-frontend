@@ -68,7 +68,7 @@ const [inputs, setInputs] = useState({
 		e.preventDefault();
 		try {
 
-			const url = "http://localhost:5050/users/login";
+			const url = "https://travel-mania-api.onrender.com/users/login";
 			const { data: res } = await axios.post(url, data);
 			console.log(res);
 			localStorage.setItem("userId",res.id);
