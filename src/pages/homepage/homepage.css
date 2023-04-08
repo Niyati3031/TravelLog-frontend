@@ -1,7 +1,7 @@
 
 #about {
     /* background-color: #FAEDCD; */
-    height: 200px;
+    height: 40%;
   }
   #about-container {
     width: 50%;
@@ -11,7 +11,7 @@
   
   #about-title {
     color: #9E4784;
-    font-size: 35px;
+    /* font-size: 35px; */
     font-weight: 600;
     font-family: "Helvetica Neue";
   }
@@ -19,6 +19,7 @@
   #about-content {
     color: #9E4784;
     font-size: 20px;
+    height: 40%;
   }
   
   #about-footer {
@@ -38,8 +39,8 @@
   #about-devsense {
     text-decoration: none;
     color: #9E4784;
-    font-size: 15px;
-    font-weight: 600;
+    /* font-size: 15px; */
+    /* font-weight: 600; */
   }
   
   .animation, .animation_layer {
@@ -95,6 +96,12 @@
 .body {
   margin: -5px;
   background: #ffaf00;
+}
+
+@media only screen and (max-width: 1026px) {
+  #about-content {
+    font-size: medium;
+  }
 }
 
 
